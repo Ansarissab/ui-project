@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ui page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1ebd2f577c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="nav-head " id="nav-head">
+        <h2><a href="#" class="brand">Start Bootstrap</a></h2>
+      </div>
+      <div class="nav">
+        <div class="nav-icon">
+          <a href="#" class="menu-icon" onclick="myFunction()">Menu <i class="fas fa-bars "></i></a>
+        </div>
+        <nav>
+          <!-- <div class="topnav" id="myTopnav"> -->
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="#">About</a></li>
+            <li class="nav-list-item"><a href="#">Projects</a></li>
+            <li class="nav-list-item"><a href="#">Contact</a></li>
+          </ul>
+          <!-- </div> -->
+        </nav>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#">Abouts</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-section">
+      <h1 class="hero-section-heading">Grayscale</h1>
+      <h5 class="hero-section-subtitle">A free, responsive, one page Bootstrap theme created by Start Bootstrap</h5>
+      <button type="button" class="hero-section-btn">Get Started</button>
+    </div>
+  </header>
+  <!-- Header section END -->
+
+  <section class="preview-section">
+    <div class="preview-heading">
+      <h1>Build with Bootstrap 4</h1>
+      <h5>Grayscale is a free Bootstrap theme, created with Start Bootstrap. It can be your right now, simply download
+        the
+        theme on <span>the preview page.</span> The theme is open source, and you can use it for any purpose, personal
+        or
+        commercial.</h5>
+    </div>
+  </section>
+  <!-- Preview section END-->
+
+  <div class="storyline-section">
+    <div class="storyline-image">
+      <img src="./images/preview.jpg" alt="storyline">
+    </div>
+    <div class="storyline-content">
+      <div class="storyline-div">
+        <h1>Storyline</h1>
+        <p>
+          Grayscale is open source and MIT licensed. This means you can use it for any project even commercial projects.
+          Download it, cutomize it, and publish your website.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Story line Section END -->
+
+  <div class="misty-section">
+    <div class="misty-images">
+      <div class="item">
+        <img src="./images/mountain1.jpg" alt="">
+      </div>
+      <div class="image-description first-description misty-image2 item">
+        <div class="image-item">
+          <h3>Misty</h3>
+          <p>An example of wherer you can put an image of a project or anything else along with a description</p>
+        </div>
+      </div>
+      <div class=" image-description second-description misty-image3 item">
+        <div class="image-item">
+          <h3>Misty</h3>
+          <p>An example of wherer you can put an image of a project or anything else along with a description</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./images/mountain4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- misty-section END -->
+
+  <section class="subscribe-section">
+    <div class="subscribe-heading">
+      <i class="far fa-paper-plane"></i>
+      <h2>Subscribe to receive updates!</h2>
+    </div>
+    <div class="subscribe-container">
+      <div class="subscribe-form">
+        <form>
+          <input type="email" placeholder="ENTER EMAIL ADDRESS">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <section class="card-section">
+      <div class="cards-container">
+        <div class="card">
+          <div>
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <div>
+            <h3>Address</h3>
+            <p>4928 Market Street, Oriando FL</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>example@yourdomain.com</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Phone</h3>
+            <p>(+1) 987654321086</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe section END -->
+
+    <section>
+      <div class="social-media-container">
+        <a href="#" class="social-media-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-media-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-media-link"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </section>
+  <!-- social media section END -->
+
+  <footer>
+    <p>Copyright &copy; Your Website 2020</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+      let head = document.getElementById("nav-head");
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        head.className += " hide-head";
+      } else {
+        x.className = "topnav";
+        head.className = "nav-head"
+      }
+    }
+  </script>
+</body>
+
+</html>
